@@ -1,0 +1,135 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* Title: Firfox Phosphene Tweaks for Arc Dark Theme
+Author: DatenRaten */
+
+/*:::::::::::::::::::::::::::::::::::::::::::::URL Bar::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+#urlbar {
+    text-align: center !important;
+    background-color: #f9f9fa !important;
+    border: solid 1px #d9dce1 !important;
+    color: #7b8094 !important;}
+
+#urlbar[focused="true"]{
+-moz-appearance: none !important;
+box-shadow: #252a33 0px 0px 0px 0px!important;}
+
+#urlbar > toolbarbutton
+  { display:none !important; visibility: hidden !important;}
+
+.autocomplete-history-dropmarker.urlbar-history-dropmarker {
+  display: none !important;}
+
+#page-report-button {
+  list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAG2SURBVDiNtZI9b9NgFIWf+8YuYXCQmBibseEH9GdQoZIJglRCK5KBZs0AXipGQEnjxHEKcsJUBgb+AgPqjNjYYQAJKhI3sS9DPuQmUCEkznbee+577hf8TzS6Yd7zXqxfpDFp4rquabcHhUUwYUtNZmvOm/7L667rnsuR5R9bnX4f1U9i9CRRCQQUpKywKeh6Za9USuut31T1EeFAVRAYT5/0rUzt6stiAQiC4OqIyw5xfE3gqUBBRKrj0bfXANbalVuINIEPkmgttq3PWYY/yuXyVwsginJnYo0eCewAiMjtB7t3XqWMBp4fiiqhGnlv4kkQTXK1RQvVavEUuOf5/Zyq3pg7p5G14+PhWaYHvKns3b2/GHRapKoGwHGcleEuehY5F7MAer2eE02s58BNgGFktoFBWvgzsooiaqvqdssPAx1n96vV4qk1c7YziDsR44kmzxBpen4oWTs+TiU3EHlnEt0X+JK59H1tsYU0Wp1+HfRgRmdrxJ7WT72yW3qy0sISNhAeg56gcjQtUHaMsKmqG3+aDbB6yoedsHbo9x/Oebs9KCyf8oVodMN8oxvm/zrhX/ALvJSqV+m+KTsAAAAASUVORK5CYII=) !important; }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::Tabs::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.tab-text { text-align: center !important; }
+
+
+/*::::::::::::::::::::::::::::::::::::::::::::::Toolbar:::::::::::::::::::::::::::::::::::::::::::::::*/ 
+
+#PanelUI-menu-button {
+  list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAcAB5AI3IuPfyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QEHCjo4sUeQvwAAACVJREFUOMtjYBjygBGZk1/V9Z8YTRPbyuD6mEbDYDQMhkcYUAwAHBEMCuVILvEAAAAASUVORK5CYII=) !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  margin-left: -3px !important;}
+
+#PanelUI-button {
+  border: none !important;
+ }
+
+/*-----------------------------------------------*/
+
+#downloads-button .toolbarbutton-icon {
+ list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAcAB5AI3IuPfyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QEHCjo2Vv+9uAAAALNJREFUOMtjYBhowIhLoqKik/8j438mBgYGBhZ2nr+TG3I+YVPHgsuAn4ysHzjgnF84LWOi1AvDwACUgElLm83KKfR5JxMjgyMO9bv52T95NTQ0/MEZjVmVU4XZGX6eYGBgUEEW/8fAcIOJncmyv6HgA14vTGvPfsvEwODL8J8BWeFbZgZGX3TNOMOgt73oxj8GhggGBoY/DAwMvxkZGUL72gvvkBxA+ZV9efkVfXEMwxsAAFt4L3r5T9XWAAAAAElFTkSuQmCC) !important;
+  -moz-image-region: rect(0px 16px 16px 0px);}
+
+#downloads-indicator-icon {
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAcAB5AI3IuPfyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QEHCjo2Vv+9uAAAALNJREFUOMtjYBhowIhLoqKik/8j438mBgYGBhZ2nr+TG3I+YVPHgsuAn4ysHzjgnF84LWOi1AvDwACUgElLm83KKfR5JxMjgyMO9bv52T95NTQ0/MEZjVmVU4XZGX6eYGBgUEEW/8fAcIOJncmyv6HgA14vTGvPfsvEwODL8J8BWeFbZgZGX3TNOMOgt73oxj8GhggGBoY/DAwMvxkZGUL72gvvkBxA+ZV9efkVfXEMwxsAAFt4L3r5T9XWAAAAAElFTkSuQmCC) !important;
+  background-repeat:no-repeat;
+  background-position:7px 2px;
+  list-style-image: none;}
+
+#downloads-button .downloads-indicator-icon {
+ list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAcAB5AI3IuPfyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QEHCjo2Vv+9uAAAALNJREFUOMtjYBhowIhLoqKik/8j438mBgYGBhZ2nr+TG3I+YVPHgsuAn4ysHzjgnF84LWOi1AvDwACUgElLm83KKfR5JxMjgyMO9bv52T95NTQ0/MEZjVmVU4XZGX6eYGBgUEEW/8fAcIOJncmyv6HgA14vTGvPfsvEwODL8J8BWeFbZgZGX3TNOMOgt73oxj8GhggGBoY/DAwMvxkZGUL72gvvkBxA+ZV9efkVfXEMwxsAAFt4L3r5T9XWAAAAAElFTkSuQmCC) !important;
+  -moz-image-region: rect(0px 16px 16px 0px);}
+
+
+/*-----------------------------------------------*/
+
+#bookmarks-menu-button .dropmarker-icon {
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAcAB5AI3IuPfyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QEHCjo7KE7BBQAAACVJREFUOMtjYBheIL+q639+Vdd/YvkMDAwMTKNhMBoGwzAMyAEABLMsC9cmeJwAAAAASUVORK5CYII=) !important;
+  background-repeat:no-repeat;
+  margin-left: 10px !important;
+  background-position:7px 3px;
+  list-style-image: none !important;}
+
+#bookmarks-menu-button > .toolbarbutton-menubutton-button {
+  visibility: collapse !important;}
+
+#bookmarks-menu-button > .toolbarbutton-menubutton-dropmarker::before {
+  display: none !important;}
+
+#editBookmarkPanel {
+  margin-top: 32px !important;
+  -moz-margin-end: -34px !important;}
+
+/*::::::::::::::::::::::::::::::::::::::::Window Cotrols HTitle::::::::::::::::::::::::::::::::::::::::::::*/
+
+#window-controls[htitle] {
+  margin-top: 6px;
+  margin-right: 4px; }
+
+#window-controls[htitle] > #minimize-button, #window-controls[htitle] > #restore-button, #window-controls[htitle] > #close-button {
+  padding: 0 7px 0; }
+
+#window-controls[htitle] > #minimize-button {
+ list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wBwAHw+ZSm0AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QEGEgEDlncDDgAAARRJREFUOMulkzFqw0AQRb9GWcVk2SaNTAoVvoANC3HlkxiUEwQJAu5SpTMEJHKC6ATu3LtxXAh8BpFCatIoAiNFi6sVSbBAQr8ceH9nZ/4AA2X8L4Teep5YIkgZn31djUYAcPtzOo2r4uiUue+Fq0OrwfPT23vMbbci8+JrTNWQRRa9vD4+6Jr5G/4Qd64yqLVdZRA+r8V0KReT3X67AQDSbcfcdrv+O+a2G3rreWOQWCJoa/uSKjKRWCJoDFLGZ32nrxkCAD3tPtIMDc0B6T33BTVDADCuimNfA80QADhl7jNVd4aZquGUud8YeOHqIIss6mogiyzSkW6Wv9tvN0u5mGTsZtqWRqZq3H+nf6I8+JgG6wxMSHAolymcsgAAAABJRU5ErkJggg==) !important; }
+
+#window-controls[htitle] > #minimize-button:hover {
+ list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wBwAHw+ZSm0AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QEGEgUVBs9zWwAAAMhJREFUOMutk7EJwzAQRb9cBESGSCdIpzVM2ozgGFRpllSCOCOoNV4jXcCdhzACNZcishExTmw5vzz4777uTsBGsc/C2TwObrdXAHIAIpRbAA33vbFKdrOA0729gLErAD7T0IFI14WoJoBgvi3KTVQOEBbFfn7pPEnCfX+0SnYZAIQ38xWz48GDLBTyhAXkMUAkAEQMSFYW7Xmt2hjQJACaEcB9bwC4FWYXPG+AVbIDkV5sJ9LDSY9DrAtRgaj8kcTFV/iXz7RZLz/lTajmMpwbAAAAAElFTkSuQmCC) !important; }
+
+#window-controls[htitle] > #minimize-button:active {
+ list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wBwAHw+ZSm0AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QEGEgEDlncDDgAAARRJREFUOMulkzFqw0AQRb9GWcVk2SaNTAoVvoANC3HlkxiUEwQJAu5SpTMEJHKC6ATu3LtxXAh8BpFCatIoAiNFi6sVSbBAQr8ceH9nZ/4AA2X8L4Teep5YIkgZn31djUYAcPtzOo2r4uiUue+Fq0OrwfPT23vMbbci8+JrTNWQRRa9vD4+6Jr5G/4Qd64yqLVdZRA+r8V0KReT3X67AQDSbcfcdrv+O+a2G3rreWOQWCJoa/uSKjKRWCJoDFLGZ32nrxkCAD3tPtIMDc0B6T33BTVDADCuimNfA80QADhl7jNVd4aZquGUud8YeOHqIIss6mogiyzSkW6Wv9tvN0u5mGTsZtqWRqZq3H+nf6I8+JgG6wxMSHAolymcsgAAAABJRU5ErkJggg==) !important; }
+
+/*-----------------------------------------------*/
+
+#window-controls[htitle] > #restore-button {
+ list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QEIESYrm57Q+wAAAQJJREFUOMutkrFOhEAURc/MugWN1m5jh6FW9wtsKEyMX2BjocbwLRsjm2hjYa10dH7ASraUZDsafoGYDDwLB0JWlwj6ypvc8+7Mu/DHUevC4enVnh5tXQI+4Fp5BcRVaeZJFGYbAUdnNxdKqRngbFhYiEjw9nz7UAujNfM9MO5IPFZKnUy8aZ6ni2WTwMZOOzZ/S1KVxkuiMNMA9s1Oj79zrAdtBX/AAfw2wB0AcNuAwaNbd+47qzYgHgCIG0BVmjlQ9DAX1vMFSKIwE5Hgt24RCepKN03M08Vy4k1zpdRxRxsLEbn+sco1ZHf/4Elp/QFsAzuAAd6Bx6o058nL3Sv/OZ+SzVgDE92A5wAAAABJRU5ErkJggg==) !important; }
+
+#window-controls[htitle] > #restore-button:hover {
+ list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QEIESw2AndUqAAAAQVJREFUOMutkrFKxEAURc9MSJFGP0HZImAr+wGCsUjhP9goikVKkdRbWFqtxsbCf0hh4hcsWypssZBmfyFIHJ6FkxBWN5joKy/c8+7Mu/DHUevC4dlkx3HcCyAEfCsvgNSYaponcbERcHR+c6qUugW8DQtLEYme764easFZMyeA25HYVUodj8bBajnL5k0CG/utY/O3JMZUe3kSFxrAvtnr8Xee9aCtEA44QNgG+AMAfhsweHTrzn1n0QakAwBpAzCmmgJlD3NpPV+APIkLEYl+6xaRqK5008TlLJuPxsFKKRV0tLEUkcsfq1xDdvcPnrR23oEtYBv4AF6BR2Oqk+z++oX/nE/lAVc/ANMqzwAAAABJRU5ErkJggg==) !important; }
+
+#window-controls[htitle] > #restore-button:active {
+ list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QEIESYrm57Q+wAAAQJJREFUOMutkrFOhEAURc/MugWN1m5jh6FW9wtsKEyMX2BjocbwLRsjm2hjYa10dH7ASraUZDsafoGYDDwLB0JWlwj6ypvc8+7Mu/DHUevC4enVnh5tXQI+4Fp5BcRVaeZJFGYbAUdnNxdKqRngbFhYiEjw9nz7UAujNfM9MO5IPFZKnUy8aZ6ni2WTwMZOOzZ/S1KVxkuiMNMA9s1Oj79zrAdtBX/AAfw2wB0AcNuAwaNbd+47qzYgHgCIG0BVmjlQ9DAX1vMFSKIwE5Hgt24RCepKN03M08Vy4k1zpdRxRxsLEbn+sco1ZHf/4Elp/QFsAzuAAd6Bx6o058nL3Sv/OZ+SzVgDE92A5wAAAABJRU5ErkJggg==) !important; }
+
+/*-----------------------------------------------*/
+
+#window-controls[htitle] > #close-button {
+ list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QEGESMOTTKHygAAAM9JREFUOMutkzEKg0AQRf8uJOAN0qUTPMXWHiFNqihJ5VlSKdHKxiNY5xSCnZ03WFDYSZFVloiJrvnlwH/zd2YW2Cj2WXieLsfDfncD4ANwdbkGULZdH4sia2YB1fkacMbuAJyZhlIRRV6epBOANj+WxFZE4QBhRuzqS+dJkrbrPVFkDQcA/WZnxewc7QHXBd9iAb4JcC0ArgmwFjf2vFa1CSgtAOUIaLs+BiBXmKX2vAGiyBpFFC11K6JoOOlxiF6epIoo/JFEmlf4l8+0WS8f+FRiW0AInAAAAABJRU5ErkJggg==) !important; }
+
+#window-controls[htitle] > #close-button:hover {
+ list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wBwAHw+ZSm0AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QEGETQQsr4+PwAAAMdJREFUOMutkzEKg0AQRf9uUmRPkU7IUTxIhBRh20BqwVYshHgQjxKw8xRrof4UWWWJmOiaXw78N39nZoGNEp8Fc70dD7v9BUAIILDlCkDZdG2usqSeBfT6fhZCpADUTENDUss0LiYAa34siU0yGiDCif380nmSpOnak8qSWgKAfbNaMTtlPZC2EHosIHQBgQcgcAHeks6e16pyAaUHoBwBTdfmAMwKs7GeN0BlSU1SL3WT1MNJj0OUaVyQjH4kMe4V/uUzbdYLHL1TFOLbjcMAAAAASUVORK5CYII=) !important; }
+
+#window-controls[htitle] > #close-button:active {
+ list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QEGESMOTTKHygAAAM9JREFUOMutkzEKg0AQRf8uJOAN0qUTPMXWHiFNqihJ5VlSKdHKxiNY5xSCnZ03WFDYSZFVloiJrvnlwH/zd2YW2Cj2WXieLsfDfncD4ANwdbkGULZdH4sia2YB1fkacMbuAJyZhlIRRV6epBOANj+WxFZE4QBhRuzqS+dJkrbrPVFkDQcA/WZnxewc7QHXBd9iAb4JcC0ArgmwFjf2vFa1CSgtAOUIaLs+BiBXmKX2vAGiyBpFFC11K6JoOOlxiF6epIoo/JFEmlf4l8+0WS8f+FRiW0AInAAAAABJRU5ErkJggg==) !important; }
+
+
+/*::::::::::::::::::::::::::::::::::::::::::::::Context Menu:::::::::::::::::::::::::::::::::::::::::::::::*/ 
+
+#tabContextMenu image,
+#contentAreaContextMenu image,
+.textbox-contextmenu image,
+#placesContext image {
+  visibility: hidden !important;}
+
+#context-navigation image{
+  visibility: visible !important;}
+
+
+/*::::::::::::::::::::::::::::::::::::::::::::::Remove Sync:::::::::::::::::::::::::::::::::::::::::::::::*/ 
+
+#PanelUI-fxa-status { display: none !important }
+
